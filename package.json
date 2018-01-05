@@ -1,0 +1,26 @@
+{
+  "name": "mmbot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/mongodb": "^2.2.17",
+    "nodemon": "^1.13.3",
+    "ts-node": "^4.0.2",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2"
+  },
+  "scripts": {
+    "start": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/main.ts"
+  },
+  "dependencies": {
+    "@types/yargs": "^10.0.0",
+    "chalk": "^2.3.0",
+    "gdax": "https://github.com/coinbase/gdax-node",
+    "moment": "^2.20.1",
+    "mongodb": "^3.0.0-rc0",
+    "node-status": "^1.0.0",
+    "timebucket": "^0.4.0",
+    "yargs": "^10.0.3"
+  }
+}
