@@ -5,6 +5,7 @@ import * as yargs from "yargs";
 
 import { BackfillCommandModule } from "../commands/backfill";
 import { ProductsCommandModule } from "../commands/products";
+import { SimCommandModule } from "../commands/sim";
 import { TestCommandModule } from "../commands/test";
 import { Database } from "../db/db";
 
@@ -23,5 +24,6 @@ const y = yargs
     .command(new BackfillCommandModule(db))
     .command(new ProductsCommandModule())
     .command(new TestCommandModule())
+    .command(new SimCommandModule(db))
     .help()
     .argv;
